@@ -242,7 +242,9 @@
 
     
 <p>Vous êtes connecté en tant que <?= auth()->user()->username; ?>
-
+<form action="<?= site_url('logout'); ?>" method="POST">
+    <button type="submit">Déconnexion</button>
+</form>
 
     <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
