@@ -214,7 +214,7 @@
                 <button id="menuToggle">&#9776;</button>
             </li>
             <li class="menu-item hidden"><a href="#">Home</a></li>
-            <li class="menu-item hidden"><a href="https://codeigniter.com/user_guide/" target="_blank">Docs</a>
+            <li class="menu-item hidden"><a href="https://codeigniter.com/user_guide/" target="_blank">Deconnexion</a>
             </li>
             <li class="menu-item hidden"><a href="https://forum.codeigniter.com/" target="_blank">Community</a></li>
             <li class="menu-item hidden"><a
@@ -224,6 +224,7 @@
     </div>
 
     <div class="heroe">
+
 
         <h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
@@ -238,6 +239,10 @@
 <section>
 
     <h1>About this page</h1>
+
+    
+<p>Vous êtes connecté en tant que <?= auth()->user()->username; ?>
+
 
     <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
